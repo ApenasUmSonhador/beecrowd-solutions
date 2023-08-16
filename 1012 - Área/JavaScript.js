@@ -1,9 +1,10 @@
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
 
-a = parseFloat(lines[0])
-b = parseFloat(lines[1])
-c = parseFloat(lines[2])
+entrada = lines[0].split(" ")
+a = parseFloat(entrada[0])
+b = parseFloat(entrada[1])
+c = parseFloat(entrada[2])
 
 console.log("TRIANGULO: " + (a * c / 2).toFixed(3))
 console.log("CIRCULO: " + (3.14159 * c ** 2).toFixed(3))
